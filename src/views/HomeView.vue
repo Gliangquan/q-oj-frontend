@@ -1,18 +1,17 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <div class="about">
+    <h1>This is an home page</h1>
+
+    <!-- 测试 MdEditor.vue -->
+    <MdEditor />
+    <!-- 测试 CodeEditor.vue -->
+    <codeEditor />
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+<script setup>
+import { ref } from 'vue'
+import MdEditor from '@/components/MdEditor.vue'
+import codeEditor from '@/components/CodeEditor.vue'
 
-export default defineComponent({
-  name: "HomeView",
-  components: {
-    HelloWorld,
-  },
-});
 </script>
